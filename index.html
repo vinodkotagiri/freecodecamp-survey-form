@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>FreeCodecampSurveyForm</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Free Code Camp Survey Form</h1>
+        <p id="description">We would like to appreciate you in helping with our survey.</p>
+    </header>
+    <form id="survey-form" action="">
+
+        <fieldset class="form-field">
+            <div class="wrapper">
+            <label id="name-label" for="name">Name </label>
+            <input id="name" type="text" placeholder="Enter Your Name" required>
+        </div>
+        <div class="wrapper">
+            <label id="email-label">Email </label>
+            <input type="email" id="email" minlength="8" placeholder="coder@freecodecamp.com" required>
+        </div>
+        <div class="wrapper">
+            <label id="number-label">Age </label>
+            <input type="number" id="number" min="13" max="100" placeholder="Age" required></label>
+        </div>
+        </fieldset>
+
+        <fieldset class="form-field">
+        <legend>Which option describes your work?</legend>
+        <select name="work" id="dropdown">
+            <option disabled selected value>(select option)</option>
+            <option value="student">Student</option>
+            <option value="part-time">Part-time</option>
+            <option value="full-time">Full-time</option>
+            <option value="freelance">Free Lancing</option>
+            <option value="other">Other</option>
+        </select>
+    </fieldset>
+
+        <fieldset class="form-field">
+            <legend>How well are you satisfied with freecodecamp</legend>
+            <div class="radios">
+            <label><input type="radio" name="satisfaction" id="" value="unsatisfied"> Unsatisfied</label>
+            <label><input type="radio" name="satisfaction" id="" value="satisfied"> Satisfied</label>
+            <label><input type="radio" name="satisfaction" id="" value="very-satisfied"> Very Satisfied</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-field">
+            <legend>What tutorials provided by freecodecamp do you like ?</legend>
+            <label><input type="checkbox" name="likes" id="" value="rwd"> Responsive Web Design</label>
+            <label><input type="checkbox" name="likes" id="" value="js-dsa"> Javascript Algorithms and Data Structures</label>
+            <label><input type="checkbox" name="likes" id="" value="fe"> Frontend Development Libraries</label>
+            <label><input type="checkbox" name="likes" id="" value="dv"> Data Visualization</label>
+            <label><input type="checkbox" name="likes" id="" value="be"> Backend Development and APIs</label>
+            <label><input type="checkbox" name="likes" id="" value="qa"> Quality Assurance</label>
+            <label><input type="checkbox" name="likes" id="" value="scipy"> Scientific Computing With Python</label>
+            <label><input type="checkbox" name="likes" id="" value="dap"> Data Analysis With Python</label>
+            <label><input type="checkbox" name="likes" id="" value="is"> Information Security</label>
+            <label><input type="checkbox" name="likes" id="" value="mlp"> Machine Learning With Python</label>
+            <label><input type="checkbox" name="likes" id="" value="cip"> Coding Interview Prep</label>
+            <label><input type="checkbox" name="likes" id="" value="rdb"> Relational Database</label>
+        <fieldset class="form-field">
+        <legend>Any suggestions for us?</legend>
+        <textarea id="suggestions"cols="60" rows="10" ></textarea>
+    </fieldset>
+    <div class="submit">
+        <button type="submit" id="submit">Submit</button>
+    </div>
+    </form>
+    
+</body>
+</html>
